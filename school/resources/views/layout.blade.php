@@ -32,12 +32,12 @@
           <div class="col-md-3">
             {{-- responsive sidebar --}}
                 <div class="sidebar">
-                  <a class="active" href="#home">Home</a>
-                  <a href="/Student">Student</a>
-                  <a href="/Teacher">Teacher</a>
-                  <a href="/Courses">Courses</a>                  
-                  <a href="/Enrolment">Enrolment</a>
-                  <a href="/Payment">Payment</a>
+                  <a class="active" href="/">Home</a>
+                  <a href="/students">Student</a>
+                  <a href="/teachers">Teacher</a>
+                  <a href="/courses">Courses</a>                  
+                  <a href="/enrolment">Enrolment</a>
+                  <a href="/payment">Payment</a>
                 </div>
           </div>
                 
