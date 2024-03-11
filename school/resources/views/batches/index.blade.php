@@ -4,7 +4,7 @@
             
                 <div class="card">
                     <div class="card-header">
-                        <h2>Laravel 9 Crud</h2>
+                        <h2>BATCHES SECTION</h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/batches/create') }}" class="btn btn-success btn-sm" title="Add New batch">
@@ -28,7 +28,9 @@
                                     <tr>
                                         <td>{{ $loop->iteration }}</td>
                                         <td>{{ $item->name }}</td>
-                                        <td>{{ $item->course_id}}</td>
+                                        {{-- retrieves the name of the course from the course model,courtesy of the course()
+                                            method within the batch model --}}
+                                        <td>{{ $item->course->name}}</td>
                                         <td>{{ $item->start_date }}</td>
  
                                         <td>

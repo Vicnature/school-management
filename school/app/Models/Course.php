@@ -16,4 +16,11 @@ class Course extends Model
         'duration',];
 
     use HasFactory;
+
+
+
+    // fetches the duration and concatinates the term months beside it
+    Public function duration(){
+        return $this->duration. " Month(s)";
+    }
 }

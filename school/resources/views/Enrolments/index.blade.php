@@ -4,7 +4,7 @@
             
                 <div class="card">
                     <div class="card-header">
-                        <h2>Enrolment Application</h2>
+                        <h2>ENROLMENTS SECTION</h2>
                     </div>
                     <div class="card-body">
                         <a href="{{ url('/enrolments/create') }}" class="btn btn-success btn-sm" title="Add New enrolment">
@@ -32,8 +32,8 @@
                                         <td>{{ $loop->iteration }}</td>
                                         {{-- <td>{{ $item->name }}</td> --}}
                                         <td>{{ $item->enrol_no}}</td>
-                                        <td>{{ $item->batch_id}}</td>
-                                        <td>{{ $item->student_id }}</td>
+                                        <td>{{ $item->batch->name}}</td>
+                                        <td>{{ $item->student->name}}</td>
                                         <td>{{ $item->join_date}}</td>
                                         <td>{{ $item->fee}}</td>
  
