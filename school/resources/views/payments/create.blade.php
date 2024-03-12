@@ -10,11 +10,11 @@
         @csrf
         <label>Enrolment no</label></br>
         
-        <select name="enrol_no" id="enrol_no">
+        <select name="enrolment_id" id="enrolment_id">
           {{-- loop over an iterative array with id's and names --}}
-          @foreach ($enrolments as $id=>$enrol_no )
+          @foreach ($enrolments as $id=>$enrolment_id )
             <option value="{{$id}}">
-              {{ $enrol_no }}
+              {{ $enrolment_id }}
             </option>
 
           @endforeach

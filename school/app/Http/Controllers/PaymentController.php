@@ -48,7 +48,7 @@ class PaymentController extends Controller
     public function show(string $id)
     {
         //
-        $payment = Payment::find($id);
+        $payments = Payment::find($id);
         return view('payments.show')->with('payments', $payment);
     }
 
@@ -58,8 +58,8 @@ class PaymentController extends Controller
     public function edit(string $id)
     {
         //
-        $payment = Payment::find($id);
-        return view('payments.edit',compact('payments','enrolments'));
+        $payments = Payment::find($id);
+        return view('payments.edit',compact('payments','payments'));
     }
 
     /**
