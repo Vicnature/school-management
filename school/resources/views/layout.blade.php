@@ -38,7 +38,7 @@
                   <a href="/courses">Courses</a> 
                   <a href="/batches">Batches</a>                 
                   <a href="/enrolments">Enrolment</a>
-                  <a href="/payment">Payment</a>
+                  <a href="/payments">Payment</a>
                 </div>
           </div>
                 
