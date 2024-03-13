@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use App\Models\Enrolment;
+use App\Models\Student;
+use App\Models\Batch;
 use Illuminate\View\view;
 
 class EnrolmentController extends Controller
@@ -26,7 +28,10 @@ class EnrolmentController extends Controller
     public function create()
     {
         //
-        return view('enrolments.create');
+        $batches=Batch::pluck('name','id');
+        $students=Student::pluck('name','id');
+        return view('enrolments.create',compact('batches','students'));
+       
     }
 
     /**

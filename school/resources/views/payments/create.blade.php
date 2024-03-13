@@ -10,7 +10,7 @@
         @csrf
         <label>Enrolment no</label></br>
         
-        <select name="enrolment_id" id="enrolment_id">
+        <select name="enrolment_id" id="enrolment_id" class="form-control">
           {{-- loop over an iterative array with id's and names --}}
           @foreach ($enrolments as $id=>$enrolment_id )
             <option value="{{$id}}">
@@ -20,7 +20,7 @@
           @endforeach
         </select>
 
-        <br><br>
+        <br>
         
         <label>Paid Date</label></br>
         <input type="text" name="paid_date" id="paid_date" class="form-control"></br>

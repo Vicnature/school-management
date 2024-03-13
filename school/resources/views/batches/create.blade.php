@@ -12,7 +12,7 @@
         <input type="text" name="name" id="name" class="form-control"></br>
         <label>Course</label></br>
         {{-- <input type="text" name="course_id" id="course_id" class="form-control"></br> --}}
-        <select name="course_id" id="course_id">
+        <select name="course_id" id="course_id" class="form-control">
           {{-- loop over an iterative array with id's and names --}}
           @foreach ($courses as $id=>$name )
             <option value="{{$id}}">
